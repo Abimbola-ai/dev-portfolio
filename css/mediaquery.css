@@ -28,10 +28,12 @@
     .profile-image img{
         display: none;
     }
-
-    .mobile-view img {
-        justify-content: center;
+    .mobile-view {
         text-align: center;
+    }
+    
+    .mobile-view img {
+        display: inline-block;
         padding: 50px;
         width: 200px;
         height: 200px;
@@ -55,5 +57,27 @@
         line-height: 1.5rem;
        
     }
+
+    .skills-grid-container {
+        display: block;
+        gap: 0.5rem;
+        margin-top: 0;
+        position: relative;
+        top: -100px;
+        text-align: center;
+    }
+
+    .grid-item {
+        padding-top: 0.5rem;
+        
+    }
+
+    p.skill{
+        font-size: 1rem;
+    }
+    p.years-of-experience {
+        font-size: 80%;
+    }
+    
 
 }

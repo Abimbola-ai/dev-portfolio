@@ -112,6 +112,31 @@ nav {
     text-decoration-color: var(--green); 
 }
 
+/* Skills section */
+.skills-grid-container {
+    border-top: 2px solid var(--pure-white);
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+}
+.grid-item {
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+ 
+.skill {
+    color: var(--pure-white);
+}
+
+.years-of-experience {
+    color: var(--grey);
+}
+
+p.skill{
+    font-size: 2rem;
+}
+
 
 
 
