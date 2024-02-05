@@ -1,0 +1,119 @@
+/* variables */
+:root {
+    --black: #000000;
+    --pure-white: #FFF;
+    --green: #4EE1A0;
+    --grey: #979797;
+    --dark-grey: #242424;
+}
+
+/* General */
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url(/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+
+.container {
+    max-width: 80%;
+    margin: 0px auto;  
+}
+
+* {
+    font-family: SpaceGrotesk, sans-serif;
+    background: var(--black);
+}
+
+
+a {
+    text-decoration: none;
+}
+nav {
+    width: 100%;
+}
+
+.mobile-view {
+    display: none;
+}
+
+
+/* Navigation section */
+.nav-link{
+    list-style: none;
+    display: inline;
+    margin-left: 2rem;
+    
+}
+
+.nav-link a {
+    color: var(--pure-white);
+    font-size: 26px;
+    letter-spacing: 2.29px;
+}
+
+.nav-link a:hover {
+    color: var(--grey);
+    transition: color 0.3s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.dev-name {
+    font-size: 2rem;
+    color: var(--pure-white);
+}
+
+/* icons */
+#social-icons {
+    padding-top: 2rem;
+}
+#social-icons a{
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: var(--pure-white);
+}
+
+#social-icons i:hover {
+    color: var(--grey);
+}
+
+/* home section */
+.intro-container {
+    margin-top: 3rem;
+    color: var(--pure-white);
+    display: flex;
+}
+
+.intro-details h1 {
+    font-size: 78px;
+    letter-spacing: -2.5px;
+}
+.intro-details p {
+    font-size: 18px;
+    width: 70%;
+   
+}
+
+.profile-image img {
+    border: 1px solid --dark-grey;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+ #dev-name-underline {
+    color: var(--pure-white);
+    text-decoration: underline;
+    text-decoration-color: var(--green); 
+}
+
+
+
+
+
+

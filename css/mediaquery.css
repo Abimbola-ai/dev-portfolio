@@ -1,0 +1,59 @@
+@media only screen and (max-width: 768px) {
+    /* Navigation */
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    .mobile-view {
+        padding: 0;
+        display: block;
+    }
+
+
+    #social-icons {
+        padding: 0;
+        position: relative;
+        top: -500px;
+        justify-content: center;
+    }
+    #social-icons a {
+        font-size: 1rem;
+        margin: 0px 1rem;
+    }
+
+    .profile-image img{
+        display: none;
+    }
+
+    .mobile-view img {
+        justify-content: center;
+        text-align: center;
+        padding: 50px;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    .intro-details {
+        text-align: center;
+        position:relative;
+        top: -100px;
+    }
+
+    .intro-details h1 {
+        font-size: 35px;
+        letter-spacing: -2.5px;
+        width: 100%;
+    }
+    .intro-details p {
+        text-align: center;
+        font-size: 16px;
+        width: 100%;
+        line-height: 1.5rem;
+       
+    }
+
+}
