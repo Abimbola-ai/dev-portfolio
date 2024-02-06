@@ -9,19 +9,13 @@
 }
 
 /* General */
-@font-face {
-    font-family: SpaceGrotesk;
-    src: url('/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf')format('truetype');
-}
-
-
 .container {
     max-width: 80%;
     margin: 0px auto;  
 }
 
 * {
-    font-family: SpaceGrotesk, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     background: var(--black);
 }
 
