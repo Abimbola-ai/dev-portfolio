@@ -78,6 +78,75 @@
     p.years-of-experience {
         font-size: 80%;
     }
+
+    /* Project Section */
+  
+    .project-heading {
+
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .project-heading h1 {
+        font-size: 30px;
+    }
+
+    .project-heading p {
+        font-size: 0.75rem; 
+    }
+    .project-grid-container {
+        display: block;
+    }
+
+    .project-img-container img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .project-grid-item {
+        margin-bottom: 3rem;
+    }
+
+    .tools p {
+        padding-right: 0.5rem;
+        font-size: 14px;
+    }
+
+    .grid-item-details h2 {
+        font-size: 1rem;
+    }
+
+    
+    .project-img-container {
+        position: relative;
+    }
+
+    .project-links {
+        opacity: 1;
+        color: var(--pure-white);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        background-color: transparent;
+        position: static;
+        transform: none;
+        top: auto;
+        left: auto;
+        text-align: left;
+    }
+
+    .project-links p {
+        background-color: transparent;
+        text-decoration: underline var(--green);
+        display: inline-flex;
+        font-size: 12px;
+    }
+
+    .project-img-container img {
+        width: 300px;
+        height: 300px;
+        transition: none;
+        opacity: 1;
+    }
     
 
 }

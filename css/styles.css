@@ -1,3 +1,4 @@
+/* styles.css */
 /* variables */
 :root {
     --black: #000000;
@@ -52,7 +53,7 @@ nav {
 }
 
 .nav-link a:hover {
-    color: var(--grey);
+    color: var(--green);
     transition: color 0.3s ease;
 }
 
@@ -79,7 +80,7 @@ nav {
 }
 
 #social-icons i:hover {
-    color: var(--grey);
+    color: var(--green);
 }
 
 /* home section */
@@ -106,7 +107,7 @@ nav {
     height: 400px;
 }
 
- #dev-name-underline {
+ #dev-name-underline,.project-heading p   {
     color: var(--pure-white);
     text-decoration: underline;
     text-decoration-color: var(--green); 
@@ -135,6 +136,94 @@ nav {
 
 p.skill{
     font-size: 2rem;
+}
+
+/* Project Section */
+
+.project-heading {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+.project-heading h1 {
+    color: var(--pure-white);
+    font-size: 42px;
+}
+
+.project-heading p {
+    color: var(--pure-white);
+    letter-spacing: 2px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.project-grid-container {
+    display:inline-grid;
+    gap: 50px;
+    grid-template-columns: auto auto;
+}
+
+
+.grid-item-details h2 {
+    color: var(--pure-white);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.tools p {
+    letter-spacing: 2px;
+    padding-right: 1rem;
+    color: var(--grey);
+    text-transform: uppercase;
+    display: inline;
+}
+.project-grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-img-container {
+    position: relative;
+}
+
+
+.project-links {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    color: var(--pure-white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: transparent;
+}
+.project-links p {
+    background-color: transparent;
+    text-decoration: underline var(--green);
+    display: block;
+    padding-bottom: 5px;
+}
+
+.project-links p:hover {
+    color: var(--green);
+}
+
+
+.project-img-container img {
+    width: 540px;
+    height: 400px;
+    transition: opacity 0.3s ease;
+}
+.project-grid-item:hover .project-img-container img {
+    opacity: 0.3;
+}
+
+.project-grid-item:hover .project-links {
+    opacity: 1;
 }
 
 
