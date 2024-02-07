@@ -9,15 +9,35 @@
 }
 
 /* General */
-.container {
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: none;
+    max-width: 1400px;
+    margin: 0px auto;  
+    background: var(--black);
+}
+
+.wrapper{
     max-width: 80%;
     margin: 0px auto;  
 }
 
-* {
-    font-family: 'Space Grotesk', sans-serif;
+.container{
+
     background: var(--black);
+    /* padding: 0;
+    margin: 0; */
 }
+
+
+/* Add the black background color to specific sections */
+#home,
+#skills,
+#projects {
+    background-color: var(--black);
+    
+}
+
 
 
 a {
@@ -64,16 +84,16 @@ nav {
 }
 
 /* icons */
-#social-icons {
+#social-icons, #social-icons-footer {
     padding-top: 2rem;
 }
-#social-icons a{
+#social-icons a, #social-icons-footer a{
     font-size: 2rem;
     margin-right: 1.5rem;
     color: var(--pure-white);
 }
 
-#social-icons i:hover {
+#social-icons i:hover, #social-icons-footer i:hover {
     color: var(--green);
 }
 
@@ -136,7 +156,7 @@ p.skill{
 /* Project Section */
 
 .project-heading {
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -158,6 +178,7 @@ p.skill{
     display:inline-grid;
     gap: 50px;
     grid-template-columns: auto auto;
+    margin-bottom: 50px;
 }
 
 
@@ -221,8 +242,124 @@ p.skill{
     opacity: 1;
 }
 
+/* Contact Section */
+.contact-container {
+    background-color: var(--dark-grey) !important;
+    color: var(--pure-white);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact, #footer {
+    max-width: 80%;
+    margin: 0px auto;
+    background: transparent !important;
+
+}
+
+.contact-grid-container {
+    padding: 30px 0;
+    display: inline-grid;
+    grid-template-columns: 50% 50% ;
+    
+}
+
+.dev-contact {
+    width: 60%;
+}
+
+.dev-contact h1 {
+    font-size: 42px;
+}
+
+.dev-contact p {
+    line-height: 2rem;
+}
+
+form .input-area {
+    display: block;
+    padding: 30px;
+}
+
+
+.input-area {
+    border-style: none none solid none; 
+    border-width: 0 0 1px 0;
+    border-color: var(--pure-white); 
+    background-color: transparent; 
+    padding: 10px;  
+    color: var(--pure-white); 
+    font-size: 1rem;
+}
+
+textarea .input-area {
+    background-color: transparent; 
+}
+
+.input-area.active {
+    border-color: var(--green); 
+}
+
+
+.input-area::placeholder {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.input-area input {
+    color: var(--pure-white);
+    background-color: transparent !important;
+
+}
+
+.error-message {
+    display: block;
+    text-align: right; 
+    margin-top: 5px; 
+   
+}
+
+.input-area input:focus {
+    outline: none !important;
+}
 
 
 
+
+
+.contact-form a {
+    padding-bottom: 50px;
+    padding-top: 30px;
+    display: block;
+    text-align: right;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: var(--pure-white);
+    text-decoration-color: var(--green);
+    letter-spacing: 3px;
+    
+}
+
+.contact-form a:hover {
+    color: var(--green);
+}
+
+.contact-form a:active {
+    color: var(--green);
+}
+#contact {
+    border-bottom: 2px solid var(--pure-white);
+}
+
+/* Footer section */
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-wrapper #social-icons-footer a:last-child {
+    margin-right: 0;
+}
 
 
