@@ -1,12 +1,14 @@
 /* mediaquery.css */
-
+/* For Desktops */
 @media screen and (max-width: 1400px) {
     .project-img-container img {
         width: 640px;
         height: 500px;
     }
 }
+/* For Tablets */
 
+/* For mobile view */
 @media only screen and (max-width: 768px) {
     /* Navigation */
     nav {
@@ -147,7 +149,7 @@
         text-align: left;
     }
 
-    .project-links p {
+    .project-links a {
         background-color: transparent;
         text-decoration: underline var(--green);
         display: inline-flex;

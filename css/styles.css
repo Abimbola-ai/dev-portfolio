@@ -122,7 +122,7 @@ nav {
     height: 400px;
 }
 
- #dev-name-underline,.project-heading p   {
+ #dev-name-underline,.project-heading a   {
     color: var(--pure-white);
     text-decoration: underline;
     text-decoration-color: var(--green); 
@@ -167,11 +167,12 @@ p.skill{
     font-size: 42px;
 }
 
-.project-heading p {
+.project-heading a {
     color: var(--pure-white);
     letter-spacing: 2px;
     font-size: 1rem;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .project-grid-container {
@@ -217,14 +218,15 @@ p.skill{
     letter-spacing: 2px;
     background-color: transparent;
 }
-.project-links p {
+.project-links a {
     background-color: transparent;
     text-decoration: underline var(--green);
     display: block;
     padding-bottom: 5px;
+    text-decoration: none;
 }
 
-.project-links p:hover {
+.project-links a:hover {
     color: var(--green);
 }
 
@@ -323,15 +325,11 @@ textarea .input-area {
     outline: none !important;
 }
 
-
-
-
-
 .contact-form a {
     padding-bottom: 50px;
     padding-top: 30px;
     display: block;
-    text-align: right;
+    text-align: left;
     text-decoration: underline;
     text-transform: uppercase;
     color: var(--pure-white);
