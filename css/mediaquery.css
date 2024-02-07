@@ -155,23 +155,13 @@
     }
 
     .project-img-container img {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         transition: none;
         opacity: 1;
     }
 
     /* Contact section */
-    /* .contact-grid-container {
-        display: block;
-        padding: 10px 0;
-        text-align: center;
-  
-        
-    }
-    .dev-contact {
-        width: 100%;
-    } */
     .contact-grid-container {
         display: flex;
         flex-direction: column;
