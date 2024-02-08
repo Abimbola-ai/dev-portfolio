@@ -9,7 +9,8 @@
 /* For Tablets */
 
 /* For mobile view */
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px)  */
+@media only screen and (max-width: 36rem) {
     /* Navigation */
     nav {
         display: block;
