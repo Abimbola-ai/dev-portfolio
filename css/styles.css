@@ -9,12 +9,22 @@
 }
 
 /* General */
-body {
+/* body {
     font-family: 'Space Grotesk', sans-serif;
     background: none;
     max-width: 1400px;
     margin: 0px auto;  
     background: var(--black);
+} */
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--black);
+    color: #FFF;
+    font-family: 'Space Grotesk', sans-serif;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s, color 0.3s;  
 }
 
 .wrapper{
@@ -25,8 +35,7 @@ body {
 .container{
 
     background: var(--black);
-    /* padding: 0;
-    margin: 0; */
+    margin-bottom: 50px;
 }
 
 
@@ -34,14 +43,12 @@ body {
 #home,
 #skills,
 #projects {
-    background-color: var(--black);
-    
+    background-color: var(--black);  
 }
 
-
-
 a {
-    text-decoration: none;
+    color: inherit;
+    text-decoration: none !important;
 }
 nav {
     width: 100%;
@@ -51,6 +58,21 @@ nav {
     display: none;
 }
 
+
+.btn {
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--green);
+    padding-block: 0.625rem;
+    letter-spacing: 0.142875em;
+    line-height: 162.5%;
+    font-weight: 700;
+  }
+  
+  .btn-submit {
+    color: var(--primary-text-color);
+    margin-block-start: 1.5rem;
+    float: right;
+  }
 
 /* Navigation section */
 .nav-link{
@@ -102,6 +124,7 @@ nav {
     margin-top: 3rem;
     color: var(--pure-white);
     display: flex;
+    justify-content: space-between;
 }
 
 .intro-details h1 {
@@ -122,11 +145,12 @@ nav {
     height: 400px;
 }
 
- #dev-name-underline,.project-heading a   {
+ /* #dev-name-underline,
+ .project-heading a   {
     color: var(--pure-white);
     text-decoration: underline;
     text-decoration-color: var(--green); 
-}
+} */
 
 /* Skills section */
 .skills-grid-container {
@@ -134,11 +158,13 @@ nav {
     margin-top: 7rem;
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 2rem;
+    gap: 2rem; 
+   
 }
 .grid-item {
     padding-top: 1rem;
     padding-right: 1rem;
+    width: 100%;
 }
  
 .skill {
@@ -176,10 +202,15 @@ p.skill{
 }
 
 .project-grid-container {
-    display:inline-grid;
+    /* display:inline-grid;
     gap: 50px;
     grid-template-columns: auto auto;
-    margin-bottom: 50px;
+    margin-bottom: 50px; */
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem 0;
+    flex-wrap: wrap;
+
 }
 
 
@@ -250,26 +281,30 @@ p.skill{
     color: var(--pure-white);
     width: 100%;
     box-sizing: border-box;
+
 }
 
-#contact, #footer {
+.contact-wrapper {
+    padding-block: 3.75rem 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.125rem;
+    margin: 0 auto;
     max-width: 80%;
-    margin: 0px auto;
-    background: transparent !important;
-
-}
-
-.contact-grid-container {
-    padding: 30px 0;
-    display: inline-grid;
-    grid-template-columns: 50% 50% ;
-    
+    /* border: 1px solid white; */
 }
 
 .dev-contact {
-    width: 60%;
+    flex: 1;
+    max-width: calc(50% - 0.625rem);
 }
 
+.contact-form {
+    flex: 1;
+    max-width:calc(50% - 0.625rem);
+
+}
 .dev-contact h1 {
     font-size: 42px;
 }
@@ -280,7 +315,7 @@ p.skill{
 
 form .input-area {
     display: block;
-    padding: 30px;
+    padding: 20px;
 }
 
 
@@ -292,10 +327,12 @@ form .input-area {
     padding: 10px;  
     color: var(--pure-white); 
     font-size: 1rem;
+    width: 92%;
 }
 
 textarea .input-area {
     background-color: transparent; 
+    width: 92%;
 }
 
 .input-area.active {
@@ -325,12 +362,15 @@ textarea .input-area {
     outline: none !important;
 }
 
-.contact-form a {
-    padding-bottom: 50px;
-    padding-top: 30px;
+
+.contact-form button {
+    background: transparent !important;
+    border-bottom: 2px solid var(--green);
+    padding-bottom: 10px;
+    padding-top: 20px;
     display: block;
     text-align: left;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-transform: uppercase;
     color: var(--pure-white);
     text-decoration-color: var(--green);
@@ -338,22 +378,21 @@ textarea .input-area {
     
 }
 
-.contact-form a:hover {
+.contact-form button:hover {
     color: var(--green);
 }
 
-.contact-form a:active {
+.contact-form button:active {
     color: var(--green);
-}
-#contact {
-    border-bottom: 2px solid var(--pure-white);
 }
 
 /* Footer section */
-
 .footer-wrapper {
+    margin: 0 auto;
+    max-width: 80%;
     display: flex;
     justify-content: space-between;
+    border-top: 2px solid var(--pure-white);
 }
 
 .footer-wrapper #social-icons-footer a:last-child {

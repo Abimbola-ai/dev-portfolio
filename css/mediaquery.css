@@ -1,15 +1,15 @@
 /* mediaquery.css */
 /* For Desktops */
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1400px) {
     .project-img-container img {
         width: 640px;
         height: 500px;
     }
-}
+} */
 /* For Tablets */
 
 /* For mobile view */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 560px) {
     /* Navigation */
     nav {
         display: block;
@@ -164,13 +164,14 @@
     }
 
     /* Contact section */
-    .contact-grid-container {
-        display: flex;
+    .contact-wrapper {
+        /* display: flex; */
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 10px 0;
         text-align: center;
+        gap: 1rem;
     }
     
     .dev-contact {
@@ -187,22 +188,23 @@
         font-size: 0.75rem;
         line-height: 1rem;
     }
-    form {
-        padding-top: 20px;
+    /* form {
+        padding-top: 10px;
 
-    }
+    } */
     form .input-area {
         padding: 10px;
     }
     .input-area::placeholder {
         font-size: 0.5rem;
     }
-    .contact-form a {
-        padding-bottom: 30px;
-        padding-top: 20px;
+    .contact-form button {
+        padding-bottom: 10px;
+        padding-top: 5px;
         letter-spacing: 2px;
         font-size: 0.5rem;   
     }
+    
 
 
     #social-icons-footer a {
@@ -223,4 +225,51 @@
     
     
 
+}
+
+@media screen and (min-width: 48rem) {
+    .wrapper{
+        max-width: 90%;
+    }
+    nav {
+        padding: 3px 0;
+    }
+
+    .nav-link a {
+        font-size: 14px;
+        letter-spacing: 2.29px;
+    }
+    .intro-details h1 {
+        font-size: 40px;
+        letter-spacing: -2.5px;
+    }
+    .intro-details p {
+        font-size: 12px;
+        line-height: 1.5rem;
+       
+    }
+    .profile-image img {
+        width: 200px;
+        height: 200px;
+    }
+    #social-icons a, #social-icons-footer a{
+        font-size: 1rem;
+    }
+    .skills-grid-container {
+        border-top: 2px solid var(--pure-white);
+        margin-top: 3rem;
+       
+    }
+    p.skill{
+        font-size: 1.5rem;
+    }
+    .project-grid-container {
+        gap: 0.5rem 0;
+
+    }
+
+    .project-img-container img {
+        width: 350px;
+        height: 350px;
+    }
 }
