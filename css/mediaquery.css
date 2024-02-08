@@ -111,7 +111,8 @@
         font-size: 0.75rem; 
     }
     .project-grid-container {
-        display: block;
+        /* display: block; */
+        gap: 2.5rem 0;
     }
 
     .project-img-container img {
@@ -266,12 +267,12 @@
         font-size: 1.5rem;
     }
     .project-grid-container {
-        gap: 0.5rem 0;
+        gap: 3.75rem 1.25rem;
 
     }
 
-    .project-img-container img {
+    /* .project-img-container img {
         width: 350px;
         height: 350px;
-    }
+    } */
 }
