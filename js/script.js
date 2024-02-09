@@ -35,4 +35,10 @@ function isValidEmail(email) {
     return emailRegex.test(email);
 }
 
+//Functionality added to the <a> tag used as a submit button
+function submitForm() {
+    document.getElementById('submit-link').submit();
+}
+
+
 

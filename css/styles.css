@@ -1,4 +1,4 @@
-/* styles.css */
+
 /* variables */
 :root {
     --black: #000000;
@@ -9,13 +9,6 @@
 }
 
 /* General */
-/* body {
-    font-family: 'Space Grotesk', sans-serif;
-    background: none;
-    max-width: 1400px;
-    margin: 0px auto;  
-    background: var(--black);
-} */
 body {
     margin: 0;
     padding: 0;
@@ -39,7 +32,7 @@ body {
 }
 
 
-/* Add the black background color to specific sections */
+/* Adding the black background color to specific sections */
 #home,
 #skills,
 #projects {
@@ -57,22 +50,6 @@ nav {
 .mobile-view {
     display: none;
 }
-
-
-.btn {
-    text-transform: uppercase;
-    border-bottom: 2px solid var(--green);
-    padding-block: 0.625rem;
-    letter-spacing: 0.142875em;
-    line-height: 162.5%;
-    font-weight: 700;
-  }
-  
-  .btn-submit {
-    color: var(--primary-text-color);
-    margin-block-start: 1.5rem;
-    float: right;
-  }
 
 /* Navigation section */
 .nav-link{
@@ -145,12 +122,9 @@ nav {
     height: 400px;
 }
 
- /* #dev-name-underline,
- .project-heading a   {
-    color: var(--pure-white);
-    text-decoration: underline;
-    text-decoration-color: var(--green); 
-} */
+ #dev-name-underline  {
+    border-bottom: 6px solid var(--green);
+}
 
 /* Skills section */
 .skills-grid-container {
@@ -195,23 +169,22 @@ p.skill{
 
 .project-heading a {
     color: var(--pure-white);
+    border-bottom: 2px solid var(--green);
+    padding-bottom: 10px;
     letter-spacing: 2px;
     font-size: 1rem;
     text-transform: uppercase;
     text-decoration: none;
 }
 
+.project-heading a:hover {
+    color: var(--green);
+}
+
 .project-grid-container {
-    /* display:inline-grid;
-    gap: 50px;
-    grid-template-columns: auto auto;
-    margin-bottom: 50px; */
     display: flex;
     justify-content: space-between;
-    /* gap: 2.5rem 0; */
-
     flex-wrap: wrap;
-
 }
 
 
@@ -293,7 +266,6 @@ p.skill{
     gap: 3.125rem;
     margin: 0 auto;
     max-width: 80%;
-    /* border: 1px solid white; */
 }
 
 .dev-contact {
@@ -359,33 +331,34 @@ textarea .input-area {
    
 }
 
-.input-area input:focus {
+.input-area:focus {
     outline: none !important;
 }
 
 
-.contact-form button {
+.contact-form a {
     background: transparent !important;
     border-bottom: 2px solid var(--green);
     padding-bottom: 10px;
     padding-top: 20px;
     display: block;
-    text-align: left;
-    /* text-decoration: underline; */
     text-transform: uppercase;
     color: var(--pure-white);
-    text-decoration-color: var(--green);
     letter-spacing: 3px;
+    outline: none !important;
+    width: fit-content;
     
 }
 
-.contact-form button:hover {
+.contact-form a:hover {
     color: var(--green);
 }
 
-.contact-form button:active {
+.contact-form a:active {
     color: var(--green);
 }
+
+
 
 /* Footer section */
 .footer-wrapper {

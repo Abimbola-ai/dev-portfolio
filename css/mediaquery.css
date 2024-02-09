@@ -1,15 +1,4 @@
 /* mediaquery.css */
-/* For Desktops */
-/* @media screen and (max-width: 1400px) {
-    .project-img-container img {
-        width: 640px;
-        height: 500px;
-    }
-} */
-/* For Tablets */
-
-/* For mobile view */
-/* @media only screen and (max-width: 768px)  */
 @media only screen and (max-width: 36rem) {
     /* Navigation */
     nav {
@@ -28,6 +17,10 @@
     .dev-name {
         font-size: 1.5rem;
     }
+    #dev-name-underline  {
+        border-bottom: 2px solid var(--green);
+    }
+    
 
 
     #social-icons {
@@ -110,10 +103,6 @@
     .project-heading p {
         font-size: 0.75rem; 
     }
-    /* .project-grid-container {
-        display: block;
-        gap: 2.5rem 0;
-    } */
 
     .project-img-container img {
         width: 300px;
@@ -168,7 +157,6 @@
 
     /* Contact section */
     .contact-wrapper {
-        /* display: flex; */
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -191,10 +179,7 @@
         font-size: 0.75rem;
         line-height: 1rem;
     }
-    /* form {
-        padding-top: 10px;
 
-    } */
     form .input-area {
         padding: 10px;
     }
@@ -224,8 +209,10 @@
     #social-icons-footer {
         margin-bottom: 20px; 
     }
+    .error-message {
+        font-size: 0.5rem;
+    }
    
-    
     
 
 }
@@ -241,6 +228,9 @@
     .nav-link a {
         font-size: 18px;
         letter-spacing: 1.29px;
+    }
+    #dev-name-underline  {
+        border-bottom: 4px solid var(--green);
     }
     .intro-details h1 {
         font-size: 40px;
@@ -267,24 +257,38 @@
     p.skill{
         font-size: 1.5rem;
     }
-    /* .project-grid-container {
-        gap: 3.75rem 0.25rem;
-
-    } */
+ 
 
     .project-img-container img {
         width: 350px;
         height: 350px;
     }
+    .project-grid-item {
+        margin-bottom: 3rem;
+    }
+
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1200px) {
     .project-grid-container {
-        gap: 3rem; /* Adjust the gap as needed */
+        gap: 3rem; 
     }
 
     .project-img-container img {
-        width: 450px; /* Adjust the width of each image */
-        height: auto; /* Maintain aspect ratio */
+        width: 450px; 
+        height: auto; 
+    }
+ 
+}
+
+@media screen and (min-width: 1202px) {
+
+    .project-grid-item {
+        margin-bottom: 3rem;
+    }
+    .wrapper{
+        max-width: 78%;
+        margin: 0px auto;  
     }
 }
