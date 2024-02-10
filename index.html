@@ -1,233 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ola's Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/mediaquery.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mediaquery.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="wrapper">
-            <!-- Home page section -->
-            <section id="home">
-                <nav>
-                    <h1 class="dev-name">olaojikutu</h1>
-                    <ul class="nav-links">
-                        <li class="nav-link"><a href="#home">About Me</a></li>
-                        <li class="nav-link"><a href="#projects">Projects</a></li>
-                        <li class="nav-link"><a href="#contact">Contact Me</a></li>
-                        <li class="nav-link" style="margin-right: 1rem;"><a href="#" onclick="window.open('./assets/Ola-Ojikutu-Resume.pdf')">Resume</a></li>
-                    
-                    </ul>
-                </nav>
-            
-                <div class="mobile-view">
-                    <img src="assets/images/profile-img.png" alt="profile image">
+      <div class="wrapper">
+        <!-- Home page section -->
+        <section id="home">
+          <nav>
+            <h1 class="dev-name">olaojikutu</h1>
+            <ul class="nav-links">
+              <li class="nav-link"><a href="#home">About Me</a></li>
+              <li class="nav-link"><a href="#projects">Projects</a></li>
+              <li class="nav-link"><a href="#contact">Contact Me</a></li>
+              <li class="nav-link" style="margin-right: 1rem">
+                <a
+                  href="#"
+                  onclick="window.open('./assets/Ola-Ojikutu-Resume.pdf')"
+                  >Resume</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="mobile-view">
+            <img src="assets/images/profile-img.png" alt="profile image" />
+          </div>
+          <div class="intro-container">
+            <div class="intro-details">
+              <h1>
+                Nice to meet you! <br />
+                I'm <span id="dev-name-underline">Ola Ojikutu</span>.
+              </h1>
+              <p>
+                Based in Canada, I'm a front-end developer passionate about
+                building accessible web apps that users love.
+              </p>
+
+              <div id="social-icons">
+                <a href="https://github.com/Abimbola-ai"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/ojikutu-olajumoke/"
+                  ><i class="fa-brands fa-linkedin px-2"></i
+                ></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a
+                  href="https://stackoverflow.com/users/12899863/abimbola-ojikutu"
+                  ><i class="fa-brands fa-stack-overflow"></i
+                ></a>
+                <a href="mailto: ojikutu.abimbola@gmail.com"
+                  ><i class="fa-solid fa-envelope px-2"></i
+                ></a>
+              </div>
+            </div>
+            <div class="profile-image">
+              <img
+                src="assets/images/profile-img.png"
+                alt="profile image"
+                width="400"
+                height="400"
+              />
+            </div>
+          </div>
+        </section>
+        <!-- Skills section -->
+        <section id="skills">
+          <div class="skills-grid-container">
+            <div class="grid-item">
+              <p class="skill">HTML</p>
+              <p class="years-of-experience">3 Years Experience</p>
+            </div>
+            <div class="grid-item">
+              <p class="skill">CSS</p>
+              <p class="years-of-experience">3 Years Experience</p>
+            </div>
+            <div class="grid-item">
+              <p class="skill">Javascript</p>
+              <p class="years-of-experience">1 Year Experience</p>
+            </div>
+            <div class="grid-item">
+              <p class="skill">Accessibility</p>
+              <p class="years-of-experience">2 Years Experience</p>
+            </div>
+            <div class="grid-item">
+              <p class="skill">React</p>
+              <p class="years-of-experience">1 Year Experience</p>
+            </div>
+            <div class="grid-item">
+              <p class="skill">Node.js</p>
+              <p class="years-of-experience">1 Year Experience</p>
+            </div>
+          </div>
+        </section>
+        <!-- Project section -->
+        <section id="projects">
+          <div class="project-heading">
+            <h1>Projects</h1>
+            <a href="#contact">Contact me</a>
+          </div>
+          <div class="project-grid-container">
+            <div class="project-grid-item">
+              <div class="project-img-container">
+                <img
+                  src="assets/images/project1_image.png"
+                  alt="project 1 image"
+                />
+                <div class="grid-item-details">
+                  <h2>Github Developer Finder App</h2>
+                  <div class="tools">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                  </div>
                 </div>
-                <div class="intro-container">
-                    <div class="intro-details">
-                        <h1>Nice to meet you! <br> I'm <span id="dev-name-underline">Ola Ojikutu</span>.</h1>
-                        <p>Based in Canada, I'm a front-end developer passionate about building accessible web apps that users love.</p>
-                        
-                        <div id="social-icons">
-                            <a href="https://github.com/Abimbola-ai"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/ojikutu-olajumoke/"><i class="fa-brands fa-linkedin px-2"></i></a>
-                            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="https://stackoverflow.com/users/12899863/abimbola-ojikutu"><i class="fa-brands fa-stack-overflow"></i></a>
-                            <a href="mailto: ojikutu.abimbola@gmail.com"><i class="fa-solid fa-envelope px-2"></i></a>
-                        </div>
-                    </div>
-                    <div class="profile-image">
-                        <img src="assets/images/profile-img.png" alt="profile image" width="400" height="400">
-                    </div>
-                </div>   
-            </section>
-            <!-- Skills section -->
-            <section id="skills">
-                <div class="skills-grid-container">
-                    <div class="grid-item">
-                        <p class="skill">HTML</p>
-                        <p class="years-of-experience">3 Years Experience</p>
-                    </div>
-                    <div class="grid-item">
-                        <p class="skill">CSS</p>
-                        <p class="years-of-experience">3 Years Experience</p>
-                    </div>
-                    <div class="grid-item">
-                        <p class="skill">Javascript</p>
-                        <p class="years-of-experience">1 Year Experience</p>
-                    </div>
-                    <div class="grid-item">
-                        <p class="skill">Accessibility</p>
-                        <p class="years-of-experience">2 Years Experience</p>
-                    </div>
-                    <div class="grid-item">
-                        <p class="skill">React</p>
-                        <p class="years-of-experience">1 Year Experience</p>
-                    </div>
-                    <div class="grid-item">
-                        <p class="skill">Node.js</p>
-                        <p class="years-of-experience">1 Year Experience</p>
-                    </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Abimbola-ai/github-user-search-app"
+                    >view code</a
+                  >
+                  <a
+                    href="https://abimbola-ai.github.io/github-user-search-app/"
+                    >live demo</a
+                  >
                 </div>
-            </section>
-            <!-- Project section -->
-            <section id="projects">
-                <div class="project-heading">
-                    <h1>Projects</h1>
-                    <a href="#contact">Contact me</a>
+              </div>
+            </div>
+            <div class="project-grid-item">
+              <div class="project-img-container">
+                <img
+                  src="assets/images/password_generator.png"
+                  alt="project 2 image"
+                />
+                <div class="grid-item-details">
+                  <h2>Password Generator</h2>
+                  <div class="tools">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                  </div>
                 </div>
-                <div class="project-grid-container">
-                    <div class="project-grid-item">
-                        <div class="project-img-container">
-                            <img src="assets/images/project1_image.png" alt="project 1 image">
-                            <div class="grid-item-details">
-                                <h2>Github Developer Finder App</h2>
-                                <div class="tools">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>Javascript</p>
-                                </div>  
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/Abimbola-ai/github-user-search-app">view code</a>
-                                <a href="https://abimbola-ai.github.io/github-user-search-app/">live demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-grid-item">
-                        <div class="project-img-container">
-                            <img src="assets/images/thumbnail-project-2-large.webp" alt="project 2 image">
-                            <div class="grid-item-details">
-                                <h2>Project 2</h2>
-                                <div class="tools">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>Javascript</p>
-                                </div>  
-                            </div>
-                            <div class="project-links">
-                                <a href="#">view code</a>
-                                <a href="#">live demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-grid-item">
-                        <div class="project-img-container">
-                            <img src="assets/images/thumbnail-project-3-large.webp" alt="project 3 image">
-                            <div class="grid-item-details">
-                                <h2>Project 3</h2>
-                                <div class="tools">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>Javascript</p>
-                                </div>  
-                            </div>
-                            <div class="project-links">
-                                <a href="#">view code</a>
-                                <a href="#">live demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-grid-item">
-                        <div class="project-img-container">
-                            <img src="assets/images/thumbnail-project-4-large.webp" alt="project 4 image">
-                            <div class="grid-item-details">
-                                <h2>Project 4</h2>
-                                <div class="tools">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                </div>  
-                            </div>
-                            <div class="project-links">
-                                <a href="#">view code</a>
-                                <a href="#">live demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-grid-item">
-                        <div class="project-img-container">
-                            <img src="assets/images/thumbnail-project-5-large.webp" alt="project 5 image">
-                            <div class="grid-item-details">
-                                <h2>Project 5</h2>
-                                <div class="tools">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>Javascript</p>
-                                </div>  
-                            </div>
-                            <div class="project-links">
-                                <a href="#">view code</a>
-                                <a href="#">live demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-grid-item">
-                        <div class="project-img-container">
-                            <img src="assets/images/thumbnail-project-6-large.webp" alt="project 6 image">
-                            <div class="grid-item-details">
-                                <h2>Project 6</h2>
-                                <div class="tools">
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                </div>  
-                            </div>
-                            <div class="project-links">
-                                <a href="#">view code</a>
-                                <a href="#">live demo</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="project-links">
+                  <a href="https://github.com/Abimbola-ai/password-generator"
+                    >view code</a
+                  >
+                  <a href="https://abimbola-ai.github.io/password-generator/"
+                    >live demo</a
+                  >
                 </div>
-            </section> 
-        </div>     
+              </div>
+            </div>
+            <div class="project-grid-item">
+              <div class="project-img-container">
+                <img
+                  src="assets/images/thumbnail-project-3-large.webp"
+                  alt="project 3 image"
+                />
+                <div class="grid-item-details">
+                  <h2>Project 3</h2>
+                  <div class="tools">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="#">view code</a>
+                  <a href="#">live demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-grid-item">
+              <div class="project-img-container">
+                <img
+                  src="assets/images/thumbnail-project-4-large.webp"
+                  alt="project 4 image"
+                />
+                <div class="grid-item-details">
+                  <h2>Project 4</h2>
+                  <div class="tools">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="#">view code</a>
+                  <a href="#">live demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-grid-item">
+              <div class="project-img-container">
+                <img
+                  src="assets/images/thumbnail-project-5-large.webp"
+                  alt="project 5 image"
+                />
+                <div class="grid-item-details">
+                  <h2>Project 5</h2>
+                  <div class="tools">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Javascript</p>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="#">view code</a>
+                  <a href="#">live demo</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-grid-item">
+              <div class="project-img-container">
+                <img
+                  src="assets/images/thumbnail-project-6-large.webp"
+                  alt="project 6 image"
+                />
+                <div class="grid-item-details">
+                  <h2>Project 6</h2>
+                  <div class="tools">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a href="#">view code</a>
+                  <a href="#">live demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
     <div class="contact-container">
-        <section id="contact">
-            <div class="contact-wrapper">
-                <div class="dev-contact">
-                    <h1>Contact</h1>
-                    <p>I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
-                </div>
-                <div class=" contact-form">
-                    <form action="#" method="POST">
-                        <input class="input-area" type="text" placeholder="John Doe">
-                        <input  class="input-area" type="email" id="email-input" placeholder="JohnDoe@email.com">
-                        <span id="email-error" class="error-message"></span>
-                        <textarea  class="input-area" name="message" placeholder="Message" id="message" cols="30" rows="5"></textarea>
-                    </form>
-                    <a id="submit-link" href="#" onclick="submitForm()">Send Message</a>
-                </div>
-            </div>
-        </section>
-        <section id="footer">
-            <div class="footer-wrapper">
-                <div>
-                    <h1 class="dev-name">olaojikutu</h1>
-                </div>
-                
-                <div id="social-icons-footer">
-                    <a href="https://github.com/Abimbola-ai"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/ojikutu-olajumoke/"><i class="fa-brands fa-linkedin px-2"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://stackoverflow.com/users/12899863/abimbola-ojikutu"><i class="fa-brands fa-stack-overflow"></i></a>
-                    <a href="mailto: ojikutu.abimbola@gmail.com"><i class="fa-solid fa-envelope px-2"></i></a>
-                </div>
-            </div>
-        </section>
-        
+      <section id="contact">
+        <div class="contact-wrapper">
+          <div class="dev-contact">
+            <h1>Contact</h1>
+            <p>
+              I would love to hear about your project and how I could help.
+              Please fill in the form, and I’ll get back to you as soon as
+              possible.
+            </p>
+          </div>
+          <div class="contact-form">
+            <form action="#" method="POST">
+              <input class="input-area" type="text" placeholder="John Doe" />
+              <input
+                class="input-area"
+                type="email"
+                id="email-input"
+                placeholder="JohnDoe@email.com"
+              />
+              <span id="email-error" class="error-message"></span>
+              <textarea
+                class="input-area"
+                name="message"
+                placeholder="Message"
+                id="message"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </form>
+            <a id="submit-link" href="#" onclick="submitForm()">Send Message</a>
+          </div>
+        </div>
+      </section>
+      <section id="footer">
+        <div class="footer-wrapper">
+          <div>
+            <h1 class="dev-name">olaojikutu</h1>
+          </div>
+
+          <div id="social-icons-footer">
+            <a href="https://github.com/Abimbola-ai"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/ojikutu-olajumoke/"
+              ><i class="fa-brands fa-linkedin px-2"></i
+            ></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://stackoverflow.com/users/12899863/abimbola-ojikutu"
+              ><i class="fa-brands fa-stack-overflow"></i
+            ></a>
+            <a href="mailto: ojikutu.abimbola@gmail.com"
+              ><i class="fa-solid fa-envelope px-2"></i
+            ></a>
+          </div>
+        </div>
+      </section>
     </div>
-    
-    
-    
+
     <script src="js/script.js"></script>
-    <script src="https://kit.fontawesome.com/ad8cc7c5e9.js" crossorigin="anonymous"></script>
-    
-    
-</body>
+    <script
+      src="https://kit.fontawesome.com/ad8cc7c5e9.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
