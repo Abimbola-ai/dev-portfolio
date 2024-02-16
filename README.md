@@ -54,7 +54,7 @@ The rebuilt portfolio page should demonstrate implementations of:
 ### Links
 
 - Solution URL: https://github.com/Abimbola-ai/dev-portfolio
-- Live Site URL: https://abimbola-ai.github.io/dev-portfolio/#home
+- Live Site URL: https://ola-developer-portfolio.netlify.app/
 
 ## My process
 
