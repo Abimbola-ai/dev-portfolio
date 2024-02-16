@@ -255,8 +255,18 @@
             </p>
           </div>
           <div class="contact-form">
-            <form action="#" method="POST">
-              <input class="input-area" type="text" placeholder="John Doe" />
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="c7bbc7b9-5ef1-4299-a95a-62fa2158dc76"
+              />
+              <input
+                class="input-area"
+                type="text"
+                id="name"
+                placeholder="John Doe"
+              />
               <input
                 class="input-area"
                 type="email"
@@ -272,8 +282,8 @@
                 cols="30"
                 rows="5"
               ></textarea>
+              <button id="submit-link" type="submit">Send Message</button>
             </form>
-            <a id="submit-link" href="#" onclick="submitForm()">Send Message</a>
           </div>
         </div>
       </section>
@@ -303,6 +313,13 @@
     </div>
 
     <script src="js/script.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script>
+      window.onload = function () {
+        // Reset the form fields when the page loads
+        document.getElementById('form').reset()
+      }
+    </script>
     <script
       src="https://kit.fontawesome.com/ad8cc7c5e9.js"
       crossorigin="anonymous"
